@@ -11,6 +11,8 @@ import java.util.Date;
  * Provides method getBirthday() for representation of the date of birth
  * based on the date format entered in the method, e.g. {@link #SHORT_FORMAT_DATE} [dd/MM/yyyy]
  * or {@link #LONG_FORMAT_DATE} [dd MMMM yyyy].
+ *
+ * @author Danil Lifantev.
  */
 public class Person {
     private Date birthday;
