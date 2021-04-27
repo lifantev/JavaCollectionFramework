@@ -4,9 +4,11 @@ public class BinaryTreeDemo {
     public static void main(String[] args) {
         BinaryTree<Integer> bt = new BinaryTree<>();
         bt.add(7);
+        System.out.println(bt.depth()); // must be 1
         bt.add(4);
         bt.add(3);
         bt.add(5);
+        System.out.println(bt.size()); // must be 4
         bt.add(6);
         bt.add(1);
         System.out.println(bt.size()); // must be 6

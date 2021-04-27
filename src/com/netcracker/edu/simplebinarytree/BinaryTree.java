@@ -50,6 +50,14 @@ public class BinaryTree<T extends Comparable<T>> {
     }
 
     /**
+     * Counts BT max depth.
+     * @return
+     */
+    public int depth() {
+        return depth(root);
+    }
+
+    /**
      * Adds new Node in BT with specified data.
      * @param data
      * @return true if new data was added,
@@ -136,6 +144,24 @@ public class BinaryTree<T extends Comparable<T>> {
         List<T> dataList = new LinkedList<>();
         traversePostOrder(root, dataList);
         return dataList;
+    }
+
+    /**
+     * Counts subtree depth, starts from node.
+     * @param node starting point of subtree.
+     * @return
+     */
+    private int depth(Node<T> node)
+    {
+        int ldepth = 0;
+        int rdepth = 0;
+
+        if(node.getLeft() != null)
+            ldepth = depth(node.getLeft());
+        if(node.getRight() != null)
+            rdepth = depth(node.getRight());
+
+        return ldepth > rdepth ? ldepth + 1 : rdepth + 1;
     }
 
     /**
