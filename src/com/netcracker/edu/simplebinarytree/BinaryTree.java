@@ -4,8 +4,11 @@ import java.util.LinkedList;
 import java.util.List;
 
 /**
- * Binary Tree.
+ * <br>Simple Binary Tree, provides add, depth operations
+ * and three different methods for traversing the tree.<br/>
  * @param <T> extends {@code Comparable<T>}
+ *
+ * @author Danil Lifantev
  */
 public class BinaryTree<T extends Comparable<T>> {
 
