@@ -30,13 +30,13 @@ public class BinaryTreeDemo {
 
          */
 
-        bt.traverseInOrder().stream().forEach(data -> System.out.print(data + " "));
+        bt.traverseInOrder().forEach(data -> System.out.print(data + " "));
         System.out.println();
 
-        bt.traversePreOrder().stream().forEach(data -> System.out.print(data + " "));
+        bt.traversePreOrder().forEach(data -> System.out.print(data + " "));
         System.out.println();
 
-        bt.traversePostOrder().stream().forEach(data -> System.out.print(data + " "));
+        bt.traversePostOrder().forEach(data -> System.out.print(data + " "));
         System.out.println();
     }
 }
